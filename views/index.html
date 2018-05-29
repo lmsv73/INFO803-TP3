@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A small introduction to three.js webgl [1]</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="/public/stylesheets/basic.css">
+
+    <script src="/public/javascripts/three.js"></script>
+    <script src="/public/javascripts/Detector.js"></script>
+    <script src="/public/javascripts/OrbitControls.js"></script>
+    <script src="/public/javascripts/FirstPersonControls.js"></script>
+    <script src="/public/javascripts/FlyControls.js"></script>
+    <script src="/public/javascripts/index.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="info"> a first three.js example </div>
+<canvas id="webglcanvas" style="border: none;background-color:#000000"
+        width="1200" height="1000"></canvas>
+<!-- We run the WebGL code at the end to be sure that the document is loaded.
+  -->
+<script>
+    // We put the starting point of the javascript here, so that the whole page
+    // is loaded before WebGL code is executed.
+    init(); run();
+</script>
+</body>
+</html>
